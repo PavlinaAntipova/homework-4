@@ -544,7 +544,7 @@ strong {
             flex-basis: calc(100% / 2 - 20px);
             margin-right: 20px;
         }
-        
+
         .footer__container {
             justify-content: left;
         }
@@ -564,6 +564,11 @@ strong {
 .header__main .container {
     justify-content: space-between;
 }
+
+.logo, .basket {
+    margin: 0;
+}
+
 .menu {
     display: none;
 }
