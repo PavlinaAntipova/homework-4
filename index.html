@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta name="description" content="сторінка замовлення видавництва книг" />
+    <meta name="keywords" content="видавництво, книги" />
+    <meta name="author" content="Pavlina Antipova" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/87234ee901.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Homework 4</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__btn-box">
+        <div class="container">
+          <a class="basket basket--mobile" href="./index.html"
+            ><i class="fa-solid fa-basket-shopping"></i
+            ><span class="basket__title">Кошик</span>
+            <span class="basket__products">3 товари</span>
+            <span class="basket__sum">530 грн</span></a
+          >
+          <div class="header__links">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+
+          <a class="auth__link" href="./index.html">
+            <i class="fa-solid fa-right-to-bracket"></i> <span>увійти</span></a
+          >
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <button type="button" class="menu">
+            <i class="fa-solid fa-bars menu__icon"></i>
+          </button>
+
+          <form class="search search--mobile">
+            <input
+              class="search__input"
+              id="search"
+              type="text"
+              placeholder="Пошук"
+            />
+
+            <div class="search__box-btn">
+              <button type="button" class="search__btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button type="submit" class="search__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+
+          <a class="logo" href="./index.html"
+            ><img src="./images/logo.jpg" alt="Лого"
+          /></a>
+
+          <a class="basket basket--desktop" href="./index.html"
+            ><i class="fa-solid fa-basket-shopping"></i
+            ><span class="basket__title">Кошик</span>
+            <span class="basket__products">3 товари</span>
+            <span class="basket__sum">530 грн</span></a
+          >
+        </div>
+      </div>
+
+      <nav class="navigation navigation--mobile">
+        <div class="container">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Головна</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Про видавництво</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Автори</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Книгарні</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Наші книги</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#"
+                    >Лауреати Нобелівської премії</a
+                  >
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Майстри світової прози</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Майстри готичної прози</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Ad Astra</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Амальгама</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Nonfiction</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Життєписи</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Зарубіжна література</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Альтернативи</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Наукова література</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Е-книги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Комплекти</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Розпродаж</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Дитяча література</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Українська література</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Поезія</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Інше</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Футболки/Торбинки</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакти</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Інформація для замовлень</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <!-- hidden header for screen readers -->
+        <h1 class="visually-hidden">Оформлення замовлення</h1>
+        <section>
+          <p class="customer-text">
+            Ви постійний покупець?
+            <a class="enter-link" href="#"
+              ><span>Щоб увійти, клацніть сюди</span></a
+            >
+          </p>
+
+          <div class="coupon">
+            <span class="coupon__icon"></span>
+            <a href="#">
+              <span class="coupon__text">Є купон?</span>
+              <span class="coupon__link">Натисніть тут, щоб ввести код</span>
+            </a>
+          </div>
+
+          <h2 class="section-title">Оплата і Доставка</h2>
+          <form
+            class="form"
+            action="action.php"
+            method="post"
+            autocomplete="off"
+          >
+            <div class="form__delivery">
+              <div>
+                <label for="name"
+                  >Імʼя
+                  <span class="icon-required" title="Обовʼязкове поле"
+                    >*</span
+                  ></label
+                >
+                <input type="text" id="name" autofocus required />
+              </div>
+
+              <div>
+                <label for="surname"
+                  >Прізвище
+                  <span class="icon-required" title="Обовʼязкове поле"
+                    >*</span
+                  ></label
+                >
+                <input type="text" id="surname" required />
+              </div>
+
+              <div class="company-box">
+                <label for="company">Компанія (організація)</label>
+                <input type="text" id="company" />
+              </div>
+
+              <div>
+                <label for="email"
+                  >E-mail
+                  <span class="icon-required" title="Обовʼязкове поле"
+                    >*</span
+                  ></label
+                >
+                <input type="email" id="email" required autocomplete="on" />
+              </div>
+
+              <div>
+                <label for="phone"
+                  >Телефон
+                  <span class="icon-required" title="Обовʼязкове поле"
+                    >*</span
+                  ></label
+                >
+                <input type="tel" id="phone" required autocomplete="on" />
+              </div>
+
+              <div class="delivery-box">
+                <label for="phone"
+                  >Спосіб доставки
+                  <span class="icon-required" title="Обовʼязкове поле"
+                    >*</span
+                  ></label
+                >
+                <select name="delivery" id="delivery" required>
+                  <option value="Nova_Poshta" selected>Нова Пошта</option>
+                  <option value="Самовывоз">Самовивіз</option>
+                </select>
+              </div>
+
+              <div class="address-box">
+                <label for="town">Адреса</label>
+                <input
+                  id="town"
+                  list="towns"
+                  type="text"
+                  placeholder="Населений пункт"
+                />
+                <datalist id="towns">
+                  <option value="Київ" />
+                  <option value="Харків" />
+                  <option value="Полтава" />
+                </datalist>
+              </div>
+
+              <div class="post-box">
+                <label for="numberOfPost"
+                  >Номер відділення/складу Нової Почти</label
+                >
+                <input type="number" min="1" step="1" id="numberOfPost" />
+              </div>
+
+              <div class="profile">
+                <input class="profile__checkbox" type="checkbox" id="profile" />
+                <label class="profile__lable" for="profile"
+                  >Створити профіль?</label
+                >
+              </div>
+            </div>
+            <div class="form__order">
+              <table class="table">
+                <caption class="form__title">
+                  Ваше замовлення
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Товар</th>
+                    <th class="table__price">Всього</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Бірманські будні <span>x 1</span></td>
+                    <td class="table__price">150 грн</td>
+                  </tr>
+                  <tr>
+                    <td>Хрестоносці <span>x 1</span></td>
+                    <td class="table__price">230 грн</td>
+                  </tr>
+                  <tr>
+                    <td>Диявол і Господь Бог <span>x 1</span></td>
+                    <td class="table__price">150 грн</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Підсумок</th>
+                    <th class="table__price">530 грн</th>
+                  </tr>
+                </tfoot>
+              </table>
+              <p class="order-price">
+                Сума замовлення <span class="order-price__sum">530 грн.</span>
+              </p>
+              <div class="payment">
+                <label class="payment__label">
+                  <input
+                    class="payment__input visually-hidden"
+                    type="radio"
+                    name="payment"
+                  />
+                  <span class="payment__check"></span>
+                  <span> Оплата кредитною картою</span>
+                </label>
+                <p class="payment__text">
+                  Оплата з допомогою платіжної системи LiqPay : Приват 24 ,
+                  готівкою у терміналі , карткою будь-якого банку.
+                </p>
+                <label class="payment__label">
+                  <input
+                    class="payment__input visually-hidden"
+                    type="radio"
+                    name="payment"
+                    checked
+                  />
+                  <span class="payment__check"></span>
+                  <span>Післяоплата</span>
+                </label>
+              </div>
+              <button class="form__btn" type="submit">
+                оформити замовлення
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="info-section">
+          <!-- hidden header for screen readers -->
+          <h2 class="visually-hidden">Інформація про доставку</h2>
+          <div class="info">
+            <p>
+              Термін виконання замовлення - до 10 робочих днів.
+              <br />
+              Вартість поштових послуг сплачується на поштовому відділенні при
+              отриманні замовлення.
+            </p>
+            <p>
+              * УВАГА! Просимо враховувати, що
+              <strong
+                >за послугу післяплати поштові оператори стягують додаткову
+                комісію</strong
+              >: наприклад, вартість даної послуги «Нової пошти» з опцією оплати
+              при отриманні замовлення у відділенні становить 20 грн + 2% від
+              суми грошового переказу.
+            </p>
+            <p>
+              Після надходження на відділення Нової пошти, замовлення
+              зберігається там три дні. Якщо клієнт протягом цього часу його не
+              забирає, замовлення автоматично. повертається на склад
+              видавництва. Повторне надсилання замовлення можливе лише за умови
+              сплати додаткової вартості кур'єрських послуг.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="copy-box">
+          <p class="footer__copy">&copy; 2016-2021, Видавництво Жупанського</p>
+          <a class="footer__policy" href="#"
+            >Політика відшкодування та повернення</a
+          >
+        </div>
+        <a class="footer__link" href="#"
+          ><i class="fa-brands fa-facebook"></i
+          ><span>Facebook-спільнота</span></a
+        >
+        <a class="footer__link" href="#">Розробка сайтів - Kolodiy.info</a>
+      </div>
+    </footer>
+  </body>
+</html>
